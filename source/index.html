@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Элитный фитнес-центр SUPERGYM в Омске">
+  <link rel="preload" as="font" href="./fonts/alumni-sans-bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/alumni-sans-bold.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/alumni-sans-extra-bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/alumni-sans-extra-bold.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/roboto-condensed-bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/roboto-condensed-bold.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/roboto-condensed-light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/roboto-condensed-light.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/roboto-condensed.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/roboto-condensed.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>test TOP3</title>
+</head>
+
+<body>
+  <main class="page-main">
+    <div class="container">
+      <section class="title-section page-main__title">
+        <h1 class="title-section__title">Sign up</h1>
+      </section>
+      <section class="sign-up">
+        <div class="sign-up-form">
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <h2>New user?</h2>
+            <div class="sign-up-form__description">
+              <p>Use the form below to create your account.</p>
+            </div>
+            <div class="sign-up-form__field">
+              <label for="firstName">First Name</label>
+              <input id="firstName" type="text" name="firstName" minlength="1" placeholder="Alice" required>
+              <label for="lastName">Last Name</label>
+              <input id="lastName" type="text" name="lastName" minlength="1" placeholder="Miller" required>
+            </div>
+            <div class="sign-up-form__field">
+              <label for="nationality">Nationality</label>
+              <input id="nationality" type="text" name="nationality" placeholder="American" required>
+              <label for="email">E-mail</label>
+              <input id="email" type="mail" name="email" placeholder="alice.miller@yahoo.com" required>
+            </div>
+            <div class="sign-up-form__field">
+              <span>Date of Birth</span>
+              <div class="sign-up-form__wrapper">
+                <label class="visually-hidden" for="day"></label>
+                <input id="day" type="number" name="day" placeholder="21" required>
+                <label class="visually-hidden" for="month"></label>
+                <input id="month" type="text" name="month" placeholder="December" required>
+                <label class="visually-hidden" for="year"></label>
+                <input id="year" type="number" name="year" placeholder="1995" required>
+              </div>
+            </div>
+            <div class="sign-up-form__field">
+              <span>Gender</span>
+              <div class="sign-up-form__wrapper">
+                <input id="male" type="radio" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input id="female" type="radio" name="gender" value="female" checked required>
+                <label for="female">Female</label>
+              </div>
+            </div>
+            <div class="sign-up-form__field">
+              <div class="sign-up-form__wrapper">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" minlength="3" required>
+              </div>
+              <div class="sign-up-form__wrapper">
+                <label for="confirm-password">Confirm Password</label>
+                <input id="confirm-password" type="password" name="confirm-password" minlength="3" required>
+              </div>
+            </div>
+            <div class="sign-up-form__field sign-up-form__field--submit">
+              <p>Have an account?<a class="sign-up-form__link" href="#">Login</a></p>
+              <button type="submit">Complete Signup</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
