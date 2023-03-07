@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Элитный фитнес-центр SUPERGYM в Омске">
+  <link rel="preload" as="font" href="./fonts/pt-sans-regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/pt-sans-regular.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/work-sans.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/work-sans.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>test TOP3</title>
+</head>
+
+<body>
+  <main class="page-main">
+    <div class="container page-main__wrapper">
+
+      <!-- Синяя плашка с заголовком -->
+      <section class="title-section page-main__title">
+        <h1 class="title-section__title">Sign up</h1>
+      </section>
+
+      <!-- Форма регистрации -->
+      <section class="sign-up">
+        <div class="sign-up-form">
+          <span class="sign-up-form__background">
+            <svg width="350" height="350" viewBox="0 0 350 350" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#background-user"></use>
+            </svg>
+          </span>
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <h2>New user?</h2>
+            <div class="sign-up-form__description">
+              <p>Use the form below to create your account.</p>
+            </div>
+            <div class="sign-up-form__field sign-up-form__field--row">
+              <label for="firstName">First Name
+                <input id="firstName" type="text" name="firstName" minlength="1" placeholder="Alice" required>
+              </label>
+              <label for="lastName">Last Name
+                <input id="lastName" type="text" name="lastName" minlength="1" placeholder="Miller" required>
+              </label>
+            </div>
+            <div class="sign-up-form__field sign-up-form__field--row">
+              <label for="nationality">Nationality
+                <select id="nationality" name="nationality">
+                  <option>American</option>
+                  <option>Germany</option>
+                  <option>African</option>
+                </select>
+              </label>
+              <label for="email">E-mail
+                <input id="email" type="mail" name="email" placeholder="alice.miller@yahoo.com" required>
+              </label>
+            </div>
+            <div class="sign-up-form__field--row sign-up-form__field--birth">
+              <div class="sign-up-form__field sign-up-form__field--column">
+                <span>Date of Birth</span>
+                <div class="sign-up-form__wrapper sign-up-form__wrapper--birth">
+                  <label class="visually-hidden" for="day"></label>
+                  <select class="sign-up-form__day" id="day" name="day">
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                  </select>
+                  <label class="visually-hidden" for="month"></label>
+                  <select class="sign-up-form__month" id="month" name="month">
+                    <option>December</option>
+                    <option>January</option>
+                    <option>February</option>
+                  </select>
+                  <label class="visually-hidden" for="year"></label>
+                  <select class="sign-up-form__year" id="year" name="year">
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                  </select>
+                </div>
+              </div>
+              <div class="sign-up-form__field sign-up-form__field--column">
+                <span>Gender</span>
+                <div class="sign-up-form__wrapper sign-up-form__wrapper--gender">
+                  <input class="visually-hidden" id="male" type="radio" name="gender" value="male" required>
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite.svg#radio-circle"></use>
+                    </svg>
+                  </span>
+                  <label for="male">Male</label>
+                  <input class="visually-hidden" id="female" type="radio" name="gender" value="female" checked required>
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite.svg#radio-circle"></use>
+                    </svg>
+                  </span>
+                  <label for="female">Female</label>
+                </div>
+              </div>
+            </div>
+            <div class="sign-up-form__field sign-up-form__field--row">
+              <div class="sign-up-form__wrapper">
+                <label for="password">Password
+                  <input id="password" type="password" name="password" minlength="3" required>
+                </label>
+              </div>
+              <div class="sign-up-form__wrapper">
+                <label for="confirm-password">Confirm Password
+                  <input id="confirm-password" type="password" name="confirm-password" minlength="3" required>
+                </label>
+              </div>
+            </div>
+            <div class="sign-up-form__field sign-up-form__field--submit">
+              <p>Have an account?<a class="sign-up-form__link" href="#">Login</a></p>
+              <button type="submit">Complete Signup</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
