@@ -385,6 +385,7 @@ button,
   width: 235px;
   border: none;
   border-bottom: 1px solid #f2f2f2;
+  outline: none;
   padding: 5px 0 7px 0;
   cursor: pointer;
 }
@@ -494,6 +495,10 @@ button,
   display: flex;
 }
 
+.sign-up-form__input-wrapper {
+  position: relative;
+}
+
 .sign-up-form__link {
   font-family: "WorkSans", "Arial", sans-serif;
   text-decoration: underline;
@@ -582,6 +587,16 @@ button,
 
 .sign-up-form .sign-up-form__field--birth .sign-up-form__field:not(:last-child) {
   margin: 0 10px 0 0;
+}
+
+.sign-up-form input.is-wrong {
+  border-color: red;
+  color: red;
+}
+
+.sign-up-form input.is-accept {
+  border-color: green;
+  color: #000000;
 }
 
 /* @mixin hover-focus {

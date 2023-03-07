@@ -31,21 +31,22 @@
               <use xlink:href="./img/sprite.svg#background-user"></use>
             </svg>
           </span>
-          <form method="get" action="https://echo.htmlacademy.ru">
+          <form method="get" data-form="form" action="https://echo.htmlacademy.ru">
             <h2>New user?</h2>
             <div class="sign-up-form__description">
               <p>Use the form below to create your account.</p>
             </div>
             <div class="sign-up-form__field sign-up-form__field--row">
               <label for="firstName">First Name
-                <input id="firstName" type="text" name="firstName" minlength="1" placeholder="Alice" required>
+                <input id="firstName" data-form="firstName" type="text" name="firstName" minlength="1" placeholder="Alice" required>
               </label>
               <label for="lastName">Last Name
-                <input id="lastName" type="text" name="lastName" minlength="1" placeholder="Miller" required>
+                <input id="lastName" data-form="lastName" type="text" name="lastName" minlength="1" placeholder="Miller" required>
               </label>
             </div>
             <div class="sign-up-form__field sign-up-form__field--row">
-              <label for="nationality">Nationality
+              <div class="sign-up-form__field--column">
+                <label for="nationality">Nationality</label>
                 <div class="sign-up-form__select-wrapper">
                   <select id="nationality" name="nationality">
                     <option>American</option>
@@ -53,9 +54,9 @@
                     <option>African</option>
                   </select>
                 </div>
-              </label>
+              </div>
               <label for="email">E-mail
-                <input id="email" type="mail" name="email" placeholder="alice.miller@yahoo.com" required>
+                <input id="email" data-form="email" type="email" name="email" placeholder="alice.miller@yahoo.com" required>
               </label>
             </div>
             <div class="sign-up-form__field--row sign-up-form__field--birth">
@@ -115,12 +116,12 @@
             <div class="sign-up-form__field sign-up-form__field--row">
               <div class="sign-up-form__wrapper">
                 <label for="password">Password
-                  <input id="password" type="password" name="password" minlength="3" required>
+                  <input id="password" data-form="password" type="password" name="password" minlength="3" required>
                 </label>
               </div>
               <div class="sign-up-form__wrapper">
                 <label for="confirm-password">Confirm Password
-                  <input id="confirm-password" type="password" name="confirm-password" minlength="3" required>
+                  <input id="confirm-password" data-form="confirm-password" type="password" name="confirm-password" minlength="3" required>
                 </label>
               </div>
             </div>
@@ -133,6 +134,7 @@
       </section>
     </div>
   </main>
+  <script src="js/main.min.js" type="module"></script>
 </body>
 
 </html>
