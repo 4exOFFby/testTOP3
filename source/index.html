@@ -22,10 +22,14 @@
 
 <body>
   <main class="page-main">
-    <div class="container">
+    <div class="container page-main__wrapper">
+
+      <!-- Синяя плашка с заголовком -->
       <section class="title-section page-main__title">
         <h1 class="title-section__title">Sign up</h1>
       </section>
+
+      <!-- Форма регистрации -->
       <section class="sign-up">
         <div class="sign-up-form">
           <form method="get" action="https://echo.htmlacademy.ru">
@@ -33,46 +37,70 @@
             <div class="sign-up-form__description">
               <p>Use the form below to create your account.</p>
             </div>
-            <div class="sign-up-form__field">
-              <label for="firstName">First Name</label>
-              <input id="firstName" type="text" name="firstName" minlength="1" placeholder="Alice" required>
-              <label for="lastName">Last Name</label>
-              <input id="lastName" type="text" name="lastName" minlength="1" placeholder="Miller" required>
+            <div class="sign-up-form__field sign-up-form__field--row">
+              <label for="firstName">First Name
+                <input id="firstName" type="text" name="firstName" minlength="1" placeholder="Alice" required>
+              </label>
+              <label for="lastName">Last Name
+                <input id="lastName" type="text" name="lastName" minlength="1" placeholder="Miller" required>
+              </label>
             </div>
-            <div class="sign-up-form__field">
-              <label for="nationality">Nationality</label>
-              <input id="nationality" type="text" name="nationality" placeholder="American" required>
-              <label for="email">E-mail</label>
-              <input id="email" type="mail" name="email" placeholder="alice.miller@yahoo.com" required>
+            <div class="sign-up-form__field sign-up-form__field--row">
+              <label for="nationality">Nationality
+                <select id="nationality" name="nationality">
+                  <option>American</option>
+                  <option>Germany</option>
+                  <option>African</option>
+                </select>
+              </label>
+              <label for="email">E-mail
+                <input id="email" type="mail" name="email" placeholder="alice.miller@yahoo.com" required>
+              </label>
             </div>
-            <div class="sign-up-form__field">
-              <span>Date of Birth</span>
-              <div class="sign-up-form__wrapper">
-                <label class="visually-hidden" for="day"></label>
-                <input id="day" type="number" name="day" placeholder="21" required>
-                <label class="visually-hidden" for="month"></label>
-                <input id="month" type="text" name="month" placeholder="December" required>
-                <label class="visually-hidden" for="year"></label>
-                <input id="year" type="number" name="year" placeholder="1995" required>
+            <div class="sign-up-form__field--row sign-up-form__field--birth">
+              <div class="sign-up-form__field sign-up-form__field--column">
+                <span>Date of Birth</span>
+                <div class="sign-up-form__wrapper sign-up-form__wrapper--birth">
+                  <label class="visually-hidden" for="day"></label>
+                  <select class="sign-up-form__day" id="day" name="day">
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                  </select>
+                  <label class="visually-hidden" for="month"></label>
+                  <select class="sign-up-form__month" id="month" name="month">
+                    <option>December</option>
+                    <option>January</option>
+                    <option>February</option>
+                  </select>
+                  <label class="visually-hidden" for="year"></label>
+                  <select class="sign-up-form__year" id="year" name="year">
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                  </select>
+                </div>
+              </div>
+              <div class="sign-up-form__field sign-up-form__field--column">
+                <span>Gender</span>
+                <div class="sign-up-form__wrapper sign-up-form__wrapper--gender">
+                  <input class="visually-hidden" id="male" type="radio" name="gender" value="male" required>
+                  <label for="male">Male</label>
+                  <input class="visually-hidden" id="female" type="radio" name="gender" value="female" checked required>
+                  <label for="female">Female</label>
+                </div>
               </div>
             </div>
-            <div class="sign-up-form__field">
-              <span>Gender</span>
+            <div class="sign-up-form__field sign-up-form__field--row">
               <div class="sign-up-form__wrapper">
-                <input id="male" type="radio" name="gender" value="male" required>
-                <label for="male">Male</label>
-                <input id="female" type="radio" name="gender" value="female" checked required>
-                <label for="female">Female</label>
-              </div>
-            </div>
-            <div class="sign-up-form__field">
-              <div class="sign-up-form__wrapper">
-                <label for="password">Password</label>
-                <input id="password" type="password" name="password" minlength="3" required>
+                <label for="password">Password
+                  <input id="password" type="password" name="password" minlength="3" required>
+                </label>
               </div>
               <div class="sign-up-form__wrapper">
-                <label for="confirm-password">Confirm Password</label>
-                <input id="confirm-password" type="password" name="confirm-password" minlength="3" required>
+                <label for="confirm-password">Confirm Password
+                  <input id="confirm-password" type="password" name="confirm-password" minlength="3" required>
+                </label>
               </div>
             </div>
             <div class="sign-up-form__field sign-up-form__field--submit">
