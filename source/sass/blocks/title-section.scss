@@ -2,6 +2,10 @@
   width: 138px;
   height: 100%;
   background-color: $color-neon-blue;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 22px 6px 22px 22px;
 }
 
 .title-section__title {
@@ -11,6 +15,11 @@
   font-size: 49px;
   line-height: 63px;
   letter-spacing: 0.5px;
-  transform: rotate(270deg);
-  word-break: keep-all;
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+  height: 380px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
 }
