@@ -26,6 +26,11 @@
       <!-- Форма регистрации -->
       <section class="sign-up">
         <div class="sign-up-form">
+          <span class="sign-up-form__background">
+            <svg width="350" height="350" viewBox="0 0 350 350" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#background-user"></use>
+            </svg>
+          </span>
           <form method="get" action="https://echo.htmlacademy.ru">
             <h2>New user?</h2>
             <div class="sign-up-form__description">
@@ -79,8 +84,18 @@
                 <span>Gender</span>
                 <div class="sign-up-form__wrapper sign-up-form__wrapper--gender">
                   <input class="visually-hidden" id="male" type="radio" name="gender" value="male" required>
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite.svg#radio-circle"></use>
+                    </svg>
+                  </span>
                   <label for="male">Male</label>
                   <input class="visually-hidden" id="female" type="radio" name="gender" value="female" checked required>
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="./img/sprite.svg#radio-circle"></use>
+                    </svg>
+                  </span>
                   <label for="female">Female</label>
                 </div>
               </div>
