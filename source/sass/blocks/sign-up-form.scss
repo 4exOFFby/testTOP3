@@ -1,4 +1,11 @@
 .sign-up-form {
+  position: relative;
+
+  form {
+    position: relative;
+    z-index: 1;
+  }
+
   h2 {
     font-size: 22px;
     line-height: 26px;
@@ -24,11 +31,19 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 12px;
+    line-height: 14px;
     color: #7c7c7c;
   }
 
   span {
+    font-size: 12px;
+    line-height: 14px;
     color: #7c7c7c;
+  }
+
+  input {
+    background-color: transparent;
   }
 
   input::placeholder {
@@ -43,6 +58,7 @@
     margin: 0 0 0 -4px;
     cursor: pointer;
     text-align: start;
+    background-color: transparent;
   }
 
   input:not([type="radio"]) {
@@ -61,9 +77,16 @@
     line-height: 18px;
     padding: 7px 26px;
     color: $color-default-white;
-    background: #5a61ed;
+    background: $color-neon-blue;
     border: 0.5px solid $color-default-white;
     cursor: pointer;
+  }
+
+  &__background {
+    position: absolute;
+    bottom: -42px;
+    right: -24px;
+    z-index: -1;
   }
 
   &__field {
@@ -83,42 +106,52 @@
     margin: 0 0 16px 0;
   }
 
+  &__field--submit {
+    margin: 82px 0 0 0;
+  }
+
   &__wrapper {
     display: flex;
   }
 
+  &__link {
+    text-decoration: underline;
+    color: $color-neon-blue;
+    margin: 0 0 0 5px;
+  }
+
   &__wrapper--gender {
-    margin-bottom: 3px;
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
 
     label {
       color: $color-default-black;
       flex-direction: row;
       align-items: center;
       cursor: pointer;
-      padding: 0 0 0 18px;
+      padding: 0 0 0 6px;
       position: relative;
-
-      &::before {
-        content: "";
-        width: 12px;
-        height: 12px;
-        border: 1px solid rgba(90, 97, 237, 1);
-        border-radius: 50%;
-        position: absolute;
-        top: 5px;
-        left: 0;
-      }
     }
 
-    input[type="radio"]:checked + label::after {
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 12px;
+      height: 12px;
+    }
+
+    input[type="radio"]:checked + span::after {
       content: "";
       width: 6px;
       height: 6px;
-      background-color: rgba(90, 97, 237, 1);
+      background-color: $color-neon-blue;
       border-radius: 50%;
       position: absolute;
-      top: 35%;
-      left: 6%;
+      top: 27%;
+      left: 26.5%;
     }
 
     label:not(:last-child) {
