@@ -59,6 +59,7 @@
     width: 235px;
     border: none;
     border-bottom: 1px solid #f2f2f2;
+    outline: none;
     padding: 5px 0 7px 0;
     cursor: pointer;
   }
@@ -148,6 +149,10 @@
     display: flex;
   }
 
+  &__input-wrapper {
+    position: relative;
+  }
+
   &__link {
     font-family: "WorkSans", "Arial", sans-serif;
     text-decoration: underline;
@@ -224,5 +229,15 @@
     .sign-up-form__field:not(:last-child) {
       margin: 0 10px 0 0;
     }
+  }
+
+  input.is-wrong {
+    border-color: red;
+    color: red;
+  }
+
+  input.is-accept {
+    border-color: green;
+    color: $color-default-black;
   }
 }
