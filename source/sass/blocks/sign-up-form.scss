@@ -51,14 +51,32 @@
   }
 
   select {
+    position: relative;
     width: 235px;
     border: none;
     border-bottom: 1px solid #f2f2f2;
-    padding: 5px 0 7px 0;
+    padding: 5px 10px 7px 0;
     margin: 0 0 0 -4px;
     cursor: pointer;
     text-align: start;
     background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    z-index: 1;
+  }
+
+  select::before {
+    content: "";
+    width: 8px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-image: url("../../img/sprite/select-icon.svg");
+    background-color: red;
+    background-repeat: no-repeat;
+    z-index: 1;
   }
 
   input:not([type="radio"]) {
