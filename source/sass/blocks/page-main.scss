@@ -1,0 +1,12 @@
+.page-main {
+  background-color: #f4f5fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 138px 1fr;
+    position: relative;
+  }
+}
