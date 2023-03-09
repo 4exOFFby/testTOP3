@@ -1,8 +1,8 @@
-import {test} from './modules/check-form';
+import {checkFormField} from './modules/check-form';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-  test();
+  checkFormField();
   // Utils
   // ---------------------------------
 
