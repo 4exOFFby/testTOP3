@@ -6,6 +6,10 @@
   align-items: flex-end;
   justify-content: flex-end;
   padding: 22px 6px 22px 22px;
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .title-section__title {
@@ -18,8 +22,16 @@
   writing-mode: vertical-rl;
   transform: scale(-1);
   height: 380px;
+  user-select: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
+
+  @include vp-767 {
+    height: 100%;
+    width: 100%;
+    writing-mode: initial;
+    transform: none;
+  }
 }

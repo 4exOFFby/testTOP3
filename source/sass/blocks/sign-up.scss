@@ -1,6 +1,10 @@
 .sign-up {
-  padding: 39px 22px 33px 22px;
+  padding: 39px 20px 33px 22px;
   background-color: $color-default-white;
   width: 525px;
   overflow: hidden;
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
