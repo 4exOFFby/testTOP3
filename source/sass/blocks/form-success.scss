@@ -1,0 +1,31 @@
+.form-success {
+  display: none;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding: 38px 22px 32px 21px;
+
+  h2 {
+    font-family: "WorkSans", "Arial", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.46px;
+    margin: 0 0 0 43px;
+  }
+
+  p {
+    font-family: "WorkSans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #111111;
+    margin: 11px 0 0 43px;
+  }
+
+  .form-success__text-wrapper {
+    align-self: flex-end;
+  }
+
+  .form-success__link {
+    margin: 0;
+    align-self: flex-end;
+  }
+}
