@@ -278,6 +278,10 @@ button,
   -ms-transform: scale(-1);
   transform: scale(-1);
   height: 380px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   white-space: nowrap;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -286,7 +290,7 @@ button,
 }
 
 .sign-up {
-  padding: 39px 22px 33px 22px;
+  padding: 39px 20px 33px 22px;
   background-color: #ffffff;
   width: 525px;
   overflow: hidden;
@@ -306,13 +310,14 @@ button,
   font-size: 22px;
   line-height: 26px;
   letter-spacing: -0.46px;
-  margin: 0;
+  margin: 2px 0 0 0;
 }
 
 .sign-up-form__description {
   font-family: "WorkSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
+  letter-spacing: -0.4px;
   margin: 0 0 20px 0;
 }
 
@@ -337,6 +342,7 @@ button,
   align-items: flex-start;
   font-size: 12px;
   line-height: 14px;
+  letter-spacing: -0.4px;
   color: #7c7c7c;
 }
 
@@ -344,6 +350,7 @@ button,
   font-family: "WorkSans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 14px;
+  letter-spacing: -0.4px;
   color: #7c7c7c;
 }
 
@@ -353,30 +360,35 @@ button,
 
 .sign-up-form input::-webkit-input-placeholder {
   font-family: "WorkSans", "Arial", sans-serif;
+  letter-spacing: -0.4px;
   color: #000000;
   font-weight: 400;
 }
 
 .sign-up-form input::-moz-placeholder {
   font-family: "WorkSans", "Arial", sans-serif;
+  letter-spacing: -0.4px;
   color: #000000;
   font-weight: 400;
 }
 
 .sign-up-form input:-ms-input-placeholder {
   font-family: "WorkSans", "Arial", sans-serif;
+  letter-spacing: -0.4px;
   color: #000000;
   font-weight: 400;
 }
 
 .sign-up-form input::-ms-input-placeholder {
   font-family: "WorkSans", "Arial", sans-serif;
+  letter-spacing: -0.4px;
   color: #000000;
   font-weight: 400;
 }
 
 .sign-up-form input::placeholder {
   font-family: "WorkSans", "Arial", sans-serif;
+  letter-spacing: -0.4px;
   color: #000000;
   font-weight: 400;
 }
@@ -391,7 +403,7 @@ button,
 }
 
 .sign-up-form button {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -434,15 +446,15 @@ button,
   position: absolute;
   top: 40%;
   right: 0;
-  background-image: url("../../img/sprite/select-icon.svg");
+  background-image: url("../../img/svg/select-icon.svg");
   background-repeat: no-repeat;
   z-index: 1;
 }
 
 .sign-up-form__background {
   position: absolute;
-  bottom: -42px;
-  right: -24px;
+  bottom: -34px;
+  right: -45px;
   z-index: 0;
 }
 
@@ -480,13 +492,14 @@ button,
 }
 
 .sign-up-form__field--submit {
-  margin: 82px 0 0 0;
+  margin: 94px 0 0 0;
 }
 
 .sign-up-form__field--submit p {
   font-family: "WorkSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 15px;
+  margin: 0 0 0 -2px;
 }
 
 .sign-up-form__wrapper {
@@ -503,7 +516,7 @@ button,
   font-family: "WorkSans", "Arial", sans-serif;
   text-decoration: underline;
   color: #5A61ED;
-  margin: 0 0 0 5px;
+  margin: 0;
 }
 
 .sign-up-form__wrapper--gender {
@@ -541,8 +554,8 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   cursor: pointer;
   margin: 0 6px 0 0;
 }
@@ -554,12 +567,12 @@ button,
   background-color: #5A61ED;
   border-radius: 50%;
   position: absolute;
-  top: 27%;
-  left: 26.5%;
+  top: 28%;
+  left: 31.5%;
 }
 
 .sign-up-form__wrapper--gender label:not(:last-child) {
-  margin-right: 19px;
+  margin-right: 24px;
 }
 
 .sign-up-form__wrapper--column {
@@ -589,6 +602,22 @@ button,
   margin: 0 10px 0 0;
 }
 
+.sign-up-form .is-accepted {
+  position: relative;
+}
+
+.sign-up-form .is-accepted::before {
+  content: "";
+  width: 11px;
+  height: 8px;
+  background-image: url("../../img/svg/accepted-icon.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: absolute;
+  bottom: 27%;
+  right: 0%;
+}
+
 .sign-up-form input.is-wrong {
   border-color: red;
   color: red;
@@ -597,6 +626,48 @@ button,
 .sign-up-form input.is-accept {
   border-color: green;
   color: #000000;
+}
+
+.is-success {
+  display: none;
+}
+
+.form-success {
+  display: none;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding: 38px 22px 32px 21px;
+}
+
+.form-success h2 {
+  font-family: "WorkSans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -0.46px;
+  margin: 0 0 0 43px;
+}
+
+.form-success p {
+  font-family: "WorkSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111111;
+  margin: 11px 0 0 43px;
+}
+
+.form-success .form-success__text-wrapper {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.form-success .form-success__link {
+  margin: 0;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
 }
 
 /* @mixin hover-focus {
@@ -639,3 +710,106 @@ button,
     }
   }
 */
+
+@media (max-width: 767px) {
+  .page-main {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .page-main__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .title-section {
+    width: 100%;
+  }
+
+  .title-section__title {
+    height: 100%;
+    width: 100%;
+    -webkit-writing-mode: initial;
+    -ms-writing-mode: initial;
+    writing-mode: initial;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .sign-up {
+    width: 100%;
+  }
+
+  .sign-up-form h2 {
+    margin: 0 0 10px 0;
+  }
+
+  .sign-up-form label {
+    width: 100%;
+  }
+
+  .sign-up-form input {
+    margin-bottom: 15px;
+  }
+
+  .sign-up-form input:not([type=radio]) {
+    width: 100%;
+  }
+
+  .sign-up-form select {
+    width: 100%;
+  }
+
+  .sign-up-form__select-wrapper {
+    width: 100%;
+  }
+
+  .sign-up-form__select-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .sign-up-form__field--column {
+    width: 100%;
+  }
+
+  .sign-up-form__field--row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .sign-up-form__wrapper {
+    width: 100%;
+  }
+
+  .sign-up-form .sign-up-form__day {
+    width: 100%;
+  }
+
+  .sign-up-form .sign-up-form__month {
+    width: 100%;
+  }
+
+  .sign-up-form .sign-up-form__year {
+    width: 100%;
+  }
+
+  .sign-up-form .sign-up-form__wrapper--birth {
+    width: 100%;
+  }
+
+  .sign-up-form .is-accepted::before {
+    bottom: 45%;
+  }
+}

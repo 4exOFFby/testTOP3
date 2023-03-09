@@ -37,10 +37,10 @@
               <p>Use the form below to create your account.</p>
             </div>
             <div class="sign-up-form__field sign-up-form__field--row">
-              <label for="firstName">First Name
+              <label for="firstName" data-form="firstNameLabel">First Name
                 <input id="firstName" data-form="firstName" type="text" name="firstName" minlength="1" placeholder="Alice" required>
               </label>
-              <label for="lastName">Last Name
+              <label for="lastName" data-form="lastNameLabel">Last Name
                 <input id="lastName" data-form="lastName" type="text" name="lastName" minlength="1" placeholder="Miller" required>
               </label>
             </div>
@@ -55,7 +55,7 @@
                   </select>
                 </div>
               </div>
-              <label for="email">E-mail
+              <label for="email" data-form="emailLabel">E-mail
                 <input id="email" data-form="email" type="email" name="email" placeholder="alice.miller@yahoo.com" required>
               </label>
             </div>
@@ -115,13 +115,13 @@
             </div>
             <div class="sign-up-form__field sign-up-form__field--row">
               <div class="sign-up-form__wrapper">
-                <label for="password">Password
-                  <input id="password" data-form="password" type="password" name="password" minlength="3" required>
+                <label for="password" data-form="passwordLabel">Password
+                  <input id="password" data-form="password" type="password" name="password" minlength="8" required>
                 </label>
               </div>
               <div class="sign-up-form__wrapper">
-                <label for="confirm-password">Confirm Password
-                  <input id="confirm-password" data-form="confirm-password" type="password" name="confirm-password" minlength="3" required>
+                <label for="confirm-password" data-form="confirmPasswordLabel">Confirm Password
+                  <input id="confirm-password" data-form="confirm-password" type="password" name="confirm-password" minlength="8" required>
                 </label>
               </div>
             </div>
@@ -131,6 +131,13 @@
             </div>
           </form>
         </div>
+      </section>
+      <section class="form-success">
+        <div class="form-success__text-wrapper">
+          <h2>Thank You!</h2>
+          <p>you registered!</p>
+        </div>
+        <p class="form-success__link">Have an account?<a class="sign-up-form__link" href="#">Login</a></p>
       </section>
     </div>
   </main>
