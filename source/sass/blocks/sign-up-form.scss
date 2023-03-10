@@ -155,7 +155,7 @@
 
   &__field {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
 
@@ -194,7 +194,7 @@
       font-family: "WorkSans", "Arial", sans-serif;
       font-size: 13px;
       line-height: 15px;
-      margin: 0 0 0 -2px;
+      margin: 8px 0 0 -2px;
     }
   }
 
