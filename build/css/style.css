@@ -243,7 +243,7 @@ button,
 
 .title-section {
   width: 138px;
-  height: 482.5px;
+  height: 100%;
   background-color: #5a61ed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,9 +457,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -503,7 +503,7 @@ button,
   font-family: "WorkSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 15px;
-  margin: 0 0 0 -2px;
+  margin: 8px 0 0 -2px;
 }
 
 .sign-up-form__wrapper {
