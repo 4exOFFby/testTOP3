@@ -261,7 +261,7 @@
     }
 
     label:not(:last-child) {
-      margin-right: 24px;
+      margin-right: 22px;
     }
   }
 
@@ -304,6 +304,10 @@
   }
 
   .sign-up-form__field--birth {
+    .sign-up-form__field:last-child {
+      margin-left: 2px;
+    }
+
     .sign-up-form__field:not(:last-child) {
       margin: 0 10px 0 0;
     }
