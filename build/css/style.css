@@ -594,7 +594,7 @@ button,
 }
 
 .sign-up-form .sign-up-form__field--birth .sign-up-form__field:last-child {
-  margin-left: 2px;
+  margin: 0 0 0 2px;
 }
 
 .sign-up-form .sign-up-form__field--birth .sign-up-form__field:not(:last-child) {
@@ -919,6 +919,10 @@ button,
 
   .sign-up-form .sign-up-form__wrapper--birth {
     width: 100%;
+  }
+
+  .sign-up-form .sign-up-form__field--birth .sign-up-form__field:last-child {
+    margin: 0;
   }
 
   .sign-up-form .is-accepted::before {
