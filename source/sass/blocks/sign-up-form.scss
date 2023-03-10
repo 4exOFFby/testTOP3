@@ -168,6 +168,11 @@
     }
   }
 
+  &__field--birth {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   &__field--row {
     display: flex;
     flex-direction: row;
@@ -213,7 +218,7 @@
   }
 
   &__wrapper--gender {
-    margin-bottom: 8px;
+    margin-top: 6px;
     display: flex;
     align-items: center;
 
@@ -314,6 +319,10 @@
 
     .sign-up-form__field:not(:last-child) {
       margin: 0 10px 0 0;
+
+      @include vp-767 {
+        margin: 0;
+      }
     }
   }
 

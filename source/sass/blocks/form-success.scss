@@ -48,4 +48,11 @@
     margin: 0;
     align-self: flex-end;
   }
+
+  .form-success__text-link {
+    font-family: "WorkSans", "Arial", sans-serif;
+    text-decoration: underline;
+    color: $color-neon-blue;
+    margin: 0;
+  }
 }
