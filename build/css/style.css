@@ -567,7 +567,7 @@ button,
 }
 
 .sign-up-form__wrapper--gender label:not(:last-child) {
-  margin-right: 24px;
+  margin-right: 22px;
 }
 
 .sign-up-form__wrapper--column {
@@ -591,6 +591,10 @@ button,
 
 .sign-up-form .sign-up-form__wrapper--birth select:not(:last-child) {
   margin: 0 0 0 -4px;
+}
+
+.sign-up-form .sign-up-form__field--birth .sign-up-form__field:last-child {
+  margin-left: 2px;
 }
 
 .sign-up-form .sign-up-form__field--birth .sign-up-form__field:not(:last-child) {
