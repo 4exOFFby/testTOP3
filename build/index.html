@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Элитный фитнес-центр SUPERGYM в Омске">
+  <meta name="description" content="Registration form">
   <link rel="preload" as="font" href="./fonts/pt-sans-regular.woff2" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" as="font" href="./fonts/pt-sans-regular.woff" type="font/woff" crossorigin="anonymous">
   <link rel="preload" as="font" href="./fonts/work-sans.woff2" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" as="font" href="./fonts/work-sans.woff" type="font/woff" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>test TOP3</title>
+  <title>Registration form</title>
 </head>
 
 <body>
   <main class="page-main">
     <div class="container page-main__wrapper">
 
-      <!-- Синяя плашка с заголовком -->
+      <!-- Blue field with the title -->
       <section class="title-section page-main__title">
         <h1 class="title-section__title">Sign up</h1>
       </section>
 
-      <!-- Форма регистрации -->
+      <!-- Registration form -->
       <section class="sign-up">
         <div class="sign-up-form">
           <span class="sign-up-form__background">
@@ -31,6 +31,8 @@
               <use xlink:href="./img/sprite.svg#background-user"></use>
             </svg>
           </span>
+
+          <!-- form for integration into CMS -->
           <form method="get" data-form="form" action="https://echo.htmlacademy.ru">
             <h2>New user?</h2>
             <div class="sign-up-form__description">
@@ -95,7 +97,7 @@
                   <input class="visually-hidden" id="male" type="radio" name="gender" value="male" required>
                   <label for="male">
                     <span>
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <svg width="15" height="15" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="./img/sprite.svg#radio-circle"></use>
                       </svg>
                     </span>
@@ -104,7 +106,7 @@
                   <input class="visually-hidden" id="female" type="radio" name="gender" value="female" checked required>
                   <label for="female">
                     <span>
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <svg width="15" height="15" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="./img/sprite.svg#radio-circle"></use>
                       </svg>
                     </span>
@@ -132,6 +134,8 @@
           </form>
         </div>
       </section>
+
+      <!-- a message about the successful submission of the form -->
       <section class="form-success">
         <div class="form-success__text-wrapper">
           <h2>Thank You!</h2>
@@ -143,5 +147,4 @@
   </main>
   <script src="js/main.min.js" type="module"></script>
 </body>
-
 </html>
