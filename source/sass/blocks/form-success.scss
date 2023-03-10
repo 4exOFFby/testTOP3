@@ -1,8 +1,15 @@
+// A message about the successful submission of the form
 .form-success {
   display: none;
   grid-column: 2/3;
   grid-row: 1/2;
   padding: 38px 22px 32px 21px;
+  background-color: $color-default-white;
+
+  @include vp-767 {
+    width: 100%;
+    height: 80vh;
+  }
 
   h2 {
     font-family: "WorkSans", "Arial", sans-serif;
@@ -10,6 +17,10 @@
     line-height: 26px;
     letter-spacing: -0.46px;
     margin: 0 0 0 43px;
+
+    @include vp-767 {
+      margin: 0 0 5px 0;
+    }
   }
 
   p {
@@ -18,10 +29,19 @@
     line-height: 16px;
     color: #111111;
     margin: 11px 0 0 43px;
+
+    @include vp-767 {
+      margin: 0;
+    }
   }
 
   .form-success__text-wrapper {
     align-self: flex-end;
+    margin-bottom: 58px;
+
+    @include vp-767 {
+      margin: 100px 0 100px 0;
+    }
   }
 
   .form-success__link {

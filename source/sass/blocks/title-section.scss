@@ -1,6 +1,7 @@
+// Blue field with the title
 .title-section {
   width: 138px;
-  height: 100%;
+  height: 482.5px;
   background-color: $color-neon-blue;
   display: flex;
   align-items: flex-end;
@@ -9,6 +10,9 @@
 
   @include vp-767 {
     width: 100%;
+    height: auto;
+    padding: 15px 22px 15px 22px;
+    align-items: center;
   }
 }
 
@@ -29,9 +33,10 @@
   margin: 0;
 
   @include vp-767 {
-    height: 100%;
+    height: auto;
     width: 100%;
     writing-mode: initial;
     transform: none;
+    line-height: 63px;
   }
 }
