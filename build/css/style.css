@@ -475,6 +475,15 @@ button,
   align-items: flex-start;
 }
 
+.sign-up-form__field--birth {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
 .sign-up-form__field--row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,7 +524,7 @@ button,
 }
 
 .sign-up-form__wrapper--gender {
-  margin-bottom: 8px;
+  margin-top: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,6 +678,13 @@ button,
   margin: 0;
   -ms-flex-item-align: end;
   align-self: flex-end;
+}
+
+.form-success .form-success__text-link {
+  font-family: "WorkSans", "Arial", sans-serif;
+  text-decoration: underline;
+  color: #5a61ed;
+  margin: 0;
 }
 
 .shaking-button {
@@ -922,6 +938,10 @@ button,
   }
 
   .sign-up-form .sign-up-form__field--birth .sign-up-form__field:last-child {
+    margin: 0;
+  }
+
+  .sign-up-form .sign-up-form__field--birth .sign-up-form__field:not(:last-child) {
     margin: 0;
   }
 
