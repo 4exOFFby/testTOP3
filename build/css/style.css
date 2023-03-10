@@ -605,7 +605,7 @@ button,
   content: "";
   width: 11px;
   height: 8px;
-  background-image: url("../../img/svg/accepted-icon.svg");
+  background-image: url("../img/svg/accepted-icon.svg");
   background-repeat: no-repeat;
   z-index: 1;
   position: absolute;
